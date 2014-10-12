@@ -1,30 +1,12 @@
-<!-- This template is in markdown, not html, so
-  it will not render beautifully when you copy and
-  paste it into your github.io site, but it will at
-  least be published. Next week you'll be creating a
-  blog template using HTML and CSS and you'll be able
-  to copy and paste the blog posts from week 1 in there
-  to make them pretty next week.
+Why you'll love Git and Github
 
-  For now, please replace the title, subtitle (if desired),
-  and date with the text you would like. Markdown is pretty
-  simple, so you can just feel free to type. =) You'll want
-  to delete this chunk of a comment as well. -->
+10/11/14
 
+It shouldn't take long for you to fall in love with using the Git, Github, and the command line that joins them. These 3 things help you control the versions of your coding projects. Chances are you are not going to complete your final product in one try and you will need to make multiple revisions. You may find that a recent change has given an undesirable effect, so you want to easily revert back to a previous version. In addition, you want to be able to easily collaborate with others working with you on your projects.
 
-Title
+This may all seem like a monumental task, but Git, Github, and the command line makes this process seamless and user friendly. Through a series of commands from the command line, you can add, delete, edit files within your local directories as well as the remote directories, which is hosted by Github. Think of Github as a social programming tool where coders can easily collaborate and access each other's codes that would originate from one's local directories. Each time you give a commit command to git from the command line, a new version is created. Then, each time you push this to your remote repository in Github, this version is accessible to whoever you allow it to.
 
-Subtitle
-
-Date
-
-Paragraph 1
-
-Paragraph 2
-
-Paragraph 3
-
-Add as many paragraphs as you want!!!
+Github is a free and user friendly version controller and hosting service. It provides a polished user interface to help people visualize and navigate their remote directories. It gives them an alternative to performing EVERYTHING from the command line. Also, there is currently a promotion if you are a student where you can even get a lot more free Github and Github related services and productivity software. So, that is why you should use Github to store your code.
 
 
 
