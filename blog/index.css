@@ -1,0 +1,103 @@
+html body {
+	margin:0;
+	padding:0;
+}
+
+#sky-banner {
+  background: blue;
+  color:white;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  text-align:center;
+  display:inline-block;
+  position:relative;
+}
+
+#banner-text {
+	padding: 9px 9px 9px 9px;
+	margin: 0;
+	padding-bottom:300px;
+}
+
+/*
+#top-nav-block {
+	background:#DAC8B6;
+	position:absolute;
+	bottom: 0;
+	left: 440;
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+
+}
+*/
+#top-nav {
+	text-align:center;
+	width:50%;
+	height:50%;
+	background:#DAC8B6;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+
+#top-nav li{
+	display:inline-block;
+
+	}
+
+a {
+	color:black;
+	font-size:12;
+}
+
+a:hover {
+	color:red
+}
+
+a:visited {
+	color:purple
+}
+
+
+/*
+#static-div {
+  border: 1px solid #4593FE;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height:50px;
+}
+
+#relative-div {
+  background: red;
+  position: relative;
+  top: -950px;
+  left: 1200px;
+  width: 109.54px;
+  height:900px;
+  display:inline-block;
+}
+*/
+#main-content {
+  background: gray;
+  width: 500px;
+  position: absolute;
+  float:right;
+  height: 1500px;
+  width: 100%;
+  padding:10px;
+  display:inline-block;
+  text-align:center;
+  left:50px;
+}
+#side-bar {
+  background: #DAC8B6;
+  position: fixed;
+  width: 50px;
+  height:90%;
+  padding:10px;
+  display:block;
+}
+
