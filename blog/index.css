@@ -52,13 +52,15 @@ a {
 	font-size:12;
 }
 
+a:visited {
+	color:purple
+}
+
 a:hover {
 	color:red
 }
 
-a:visited {
-	color:purple
-}
+
 
 
 /*
