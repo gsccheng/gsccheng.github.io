@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How Great is the Enumerable "Group_by"? Great!</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
+</head>
+<body>
+<p>10/31/14</p>
+<h2>How Great is the Enumerable "Group_by"? Great!</h2>
+<p>The #group_by enumerable is great! I have yet to have a need for it, but I'm sure the opportunity to come soon. We all know how beneficial hashes can be. Can you imagine a function that can parse through an array or a group of elements and divide them depending on the result into a hash? I can see it making life so much easier. For example, say you want to divide an array of numbers into separate arrays depending on whether they're multiples of 3. Furthermore, you want to make the distinction of what their remainders are. So, calling</p>
+<p><b>[1,2,3,4,5,6].group_by { |i| i % 3}</b></p>
+<p>will give</p>
+<p><b>#=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}</b></p>
+<p>You can see that the multiples of 3 are conveniently stored as values in the 0 key. Meanwhile, the other remainder results are stored in their own keys as well. Is that not great?! Ok sorry I realize this may sound cheesy but it's the best I can come up with at the moment, and Tony the Tiger approves.</p>
+<ul>
+<h3><b>All Blog Posts</b></h3>
+<li><a href="../blog/t1-git-blog.html">Why You'll Love Guy & Github - 10/11/14</a></li>
+<li><a href="../blog/c1-chefs-kitchen.html">Shereef's Fireside Chat - 10/12/14</a></li>
+<li><a href="../blog/t2-css-design.html">Classes vs. IDs - why even bother with IDs? - 10/22/14</a></li>
+<li><a href="../blog/t3-arrays-hashes.html">Hungry for Arrays and Hashes - 10/25/14</a></li>
+<li><a href="../blog/c3-thinking-style.html">Unit 1 - Reflection and Moving Forward- 10/26/14</a></li>
+<li><a href="../blog/t4-enumerable-methods.html">How Great is the Enumerable "Group_by"? Great!</a></li>
+</ul>
+</body>
