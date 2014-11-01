@@ -7,7 +7,11 @@
 <body>
 <p>10/31/14</p>
 <h2>How Great is the Enumerable "Group_by"? Great!</h2>
-<p>The #group_by enumerable is great! I have yet to have a need for it, but I'm sure the opportunity to come soon. We all know how beneficial hashes can be. Can you imagine a function that can parse through an array or a group of elements and divide them depending on the result into a hash? I can see it making life so much easier. For example, say you want to divide an array of numbers into separate arrays depending on whether they're multiples of 3. Furthermore, you want to make the distinction of what their remainders are. So, calling</p>
+<p>The #group_by enumerable is great! Enumerables are mixins. They are what they sound like, modules that are mixed into multiple classes (so you don't have to keep redefining it for each class) so that they can also use these methods. In order for these classes to actually use these mixed in enumerable methods, it needs to first define a #each method so that it is able to pick itself (#self) apart. These picked off portions are then fed to the enumerable methods definitions to use. If you have the object itself with the enumerable and no block after it, the resulting object is considered to have an enumerator class.</p>
+<p>I have yet to use group_by, but I'm sure the opportunity will come soon. We all know how beneficial hashes can be. Can you imagine a function that can parse through an array or a group of elements and divide them depending on the result into a hash? I can see it making life so much easier.</p> 
+<p>The syntax goes like this:</p>
+<p style="color:blue; font-style:italic"> group_by { |obj| block } → a_hash</p>
+<p>For example, say you want to divide an array of numbers into separate arrays depending on whether they're multiples of 3. Furthermore, you want to make the distinction of what their remainders are. So, calling</p>
 <p><b>[1,2,3,4,5,6].group_by { |i| i % 3}</b></p>
 <p>will give</p>
 <p><b>#=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}</b></p>
