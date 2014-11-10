@@ -11,7 +11,7 @@ display: inline-block;
 width:75%;}
 
 ul {
-border: solid black 1px;
+#border: solid black 1px;
 margin: 0px 0px 0px 0px;
 float: right;
 width: 15%;
@@ -33,5 +33,6 @@ table {
 
 .blog_navi {
 	padding-top: 30px;
-	float: bottom
+	float: bottom;
+	display:block
 }
