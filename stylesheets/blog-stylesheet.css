@@ -1,15 +1,15 @@
 p {
-border: solid black 1px;
+/*border: solid black 1px;*/
 margin: 0px 0px 0px 0px;
 display:inline-block;
-width: 75%;
-}
+width: 75%;}
+
 h2 {
 border: solid black 1px;
 margin: 0px 0px 0px 0px;
 display: inline-block;
-width:75%;
-}
+width:75%;}
+
 ul {
 border: solid black 1px;
 margin: 0px 0px 0px 0px;
@@ -17,5 +17,21 @@ float: right;
 width: 15%;
 height: 195px;
 position: relative;
-top: -50px;
+top: -50px;}
+
+td {
+    font-style: italic;
+    vertical-align: top;}
+
+table {
+   width:100%
+   font-style:italic; 
+   padding:20px 40px 20px 40px} 
+
+.code {
+	background-color: gray;}
+
+.blog_navi {
+	padding-top: 30px;
+	float: bottom
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ruby Classes - What are they?</title>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+<body>
+<p>11/6/14</p>
+<h2>Create Your Own Island Today! It's easy with a Ruby Class!</h2>
+<p>There are many reasons why one wants their own island. A few of the popular ones are:</p>
+<ol>
+	<li>Get away from zombies</li>
+	<li>Get away from zombies</li>
+	<li>and Get away from zombies</li>
+</ol>
+
+<p>So what do you do if for all these great reasons you realize you don't have enough money to get your own island? Well you create one with Ruby using classes of course. It's easy and basically free.</pi>
+<p>Classes provide a blueprint for you to create objects--in this case an island. What that means is that we can create an island object called zombieless_island class called Island, and if we can create one by calling</p>
+<div class="code">zombieless_island = Island.new(2)</div>
+<p>"This is confusing, what is the 2 there for?!" you may wonder. Here we are passing an argument to initialize the class. Having such an argument is not necessary and depends on how the class is set up. So, let's dive into how classes are set up!</p>
+<p>I think the first thing you should understand are the declaration of variables; classes can use up to 4 different types and are described below. I will describe methods afterwards so don't worry if you run across that words and don't understand the application.</p><br><br>
+<table>
+	<tr>
+		<th align="left">Variable type</th>
+		<th align="left">How it's denoted</th>
+		<th align="left">When do we use it?</th>
+		<th align="left">Example of usage</th></tr>
+	
+	<tr>
+		<td>Instance Variable</td>
+		<td>"@" in front of the name of letters, numbers, or underscore ( _ ) characters</td>
+		<td>When you want a variable accessable for your instance of the object.<br> 
+			When you want to use a variable in multiple methods.</td>
+		<td>Diameter of island<br>
+			Number of defensive cannons installed on island
+			Number of zombies on island</td>
+		</tr>
+	<tr>
+		<td>Local Variable</td>
+		<td>Must use letters, numbers, or underscore ( _ ) character. By convention your local variable name should not start with a capital letter.</td>
+		<td>Use this for variables that you would only call within the same method that is it defined in. Hence, this variable is described as local.</td>
+		<td>Say you want to create a method that searches for and prints a report of where any zombies may be on the island. It may use a loop or enumerable to iterate (repeatedly search) through each section of the island. We may then want a way to keep track of how many zombies were found in the current section being checked, then print the result. Once we go through all the sections and the variable is assigned to the number of zombies in the last section, we won't use that information any more for other methods. Hence, there is no point getting it mixed up with other important variables that needs to be accessed outside of this method.</tr>
+	<tr>
+		<td>Class Variable</td>
+		<td>"@@" in front of the name of letters, numbers, or underscore characters.</td>
+		<td>When you want to set a variable to be used for all instances of the class</td>
+		<td>When you want to set a maximum height for all islands</td></tr>
+	<tr>
+		<td>Constants</td>
+		<td>Must start with a capital letters. The rest should be letters, numbers, and underscores. By convention your constant name should be in all caps</td>
+		<td>Define constants in a class for use within that class. Although you can change them, the convention is to keep them the same.</td>
+		<td>A variable that sets water as what surrounds the island</td></tr>
+		
+	<tr>
+		<td>Global Variable</td>
+		<td>"$" in front of the name of letters, numbers, and underscore</td>
+		<td>When you want to set a variable to be used in all instances. This is used with caution since it may be difficult to debug where a global variable setting may be coming from. However, if you change a global variable, it gets modified only in one of the server instances for web apps with rails. Use a constant instead if you want it used in all server instances</td>
+		<td>Setting pi to 3.1415</td></tr></table>
+<p>With all these great variables they don't mean anything if we can't do anything with them. That is where methods come in!</p>
+<P>Use variables within the definition of the methods. You can also set getter and setter methods (i.e. attr_reader, attr_writer, attr_accessor) at the beginning of the class definition outside of the method definitions. These methods automatically convert instance variables to methods so that they can easily be accessed by operations outside of the object instance</P>		
+
+
+<div class="blog_navi"<ul>
+<h3><b>All Blog Posts</b></h3>
+<li><a href="../blog/t1-git-blog.html">Why You'll Love Guy & Github - 10/11/14</a></li>
+<li><a href="../blog/c1-chefs-kitchen.html">Shereef's Fireside Chat - 10/12/14</a></li>
+<li><a href="../blog/t2-css-design.html">Classes vs. IDs - why even bother with IDs? - 10/22/14</a></li>
+<li><a href="../blog/t3-arrays-hashes.html">Hungry for Arrays and Hashes - 10/25/14</a></li>
+<li><a href="../blog/c3-thinking-style.html">Unit 1 - Reflection and Moving Forward- 10/26/14</a></li>
+<li><a href="../blog/t4-enumerable-methods.html">How Great is the Enumerable "Group_by"? Great! - 10/31/14</a></li>
+<li><a href="../blog/C4-tech-issues.html">A pipeline from the ghettos to Silicon Valley - 11/1/14</a></li>
+<li><a href="../blog/t5-ruby-classes.html"> Create Your Own Island Today! It's easy with a Ruby Class! - 11/6/14</a></li>
+</ul></div>
+</body>
