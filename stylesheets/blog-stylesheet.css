@@ -13,8 +13,7 @@ width:75%;}
 ul {
 #border: solid black 1px;
 margin: 0px 0px 0px 0px;
-float: right;
-width: 15%;
+float: left;
 height: 195px;
 position: relative;
 top: -50px;}
@@ -29,10 +28,16 @@ table {
    padding:20px 40px 20px 40px} 
 
 .code {
-	background-color: gray;}
+	padding: 10px;
+	margin: 20px 50% 20px 20px;}
+
+.code p {
+	background-color: gray;
+	padding:10px;
+	margin:10px;
+	display: inline}
 
 .blog_navi {
 	padding-top: 30px;
-	float: bottom;
-	display:block
-}
+	/*float: left;*/	
+	display:block}

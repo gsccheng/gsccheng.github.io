@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>What is the difference between Classes and Modules?</title>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+<body>
+<p>11/14/14</p>
+<h2>What is the difference between Classes and Modules?</h2>
+
+
+<a href=http://stackoverflow.com/questions/151505/difference-between-a-class-and-a-module><img src="imgs/module_class_comparison.png" width=40%></a>
+<p style="color:blue"><i>Source: stackoverflow.com<i></p><br><br>
+
+<p>We have worked somewhat extensively on Ruby classes these last few weeks. We learned that classes are basically a template for creating objects. It includes the methods and attributes that an object is formed in. Classes themselves can also inherit these methods and attributes from other classes that we can super or parent classes. Although a class can only directly inherit from one superclass at a time, that superclass may also inherit from another class.</p><br><br>
+<p>Meanwhile a few weeks ago we were introduced to the concept of an enumerable. We began using them, finding that they are incredibly useful in simplifying code and reducing the need to explicitly state loops. We researched into what the enumerable is where we found out that an enumerable is a module. We may have mostly left it at that, perhaps only going as far as stating that the module is a mix-in for classes so they can use it. But what does a module actually look like?</p><br><br>
+
+<p>The table below basically breaks it all down. The module is a collection of methods, constants, and classes. Although you can use the methods inside as instance methods for the class it is in, it is discouraged not to since it may make reading through and debugging the class very difficult to pin down where the method is defined from. So, because classes can only inherit one from one class a time, modules sort of act as this fine tuning for you to inject certain methods into different classes that you want to share similar behaviors. You include a module into a class by writing the following (replace ModuleName with the actual name) inside the top level of the class</p><br>
+
+<div class="code"><p>include ModuleName</p></div>
+
+<div class="blog_navi"><ul>
+<h3><b>All Blog Posts</b></h3>
+<li><a href="../blog/t1-git-blog.html">Why You'll Love Guy & Github - 10/11/14</a></li>
+<li><a href="../blog/c1-chefs-kitchen.html">Shereef's Fireside Chat - 10/12/14</a></li>
+<li><a href="../blog/t2-css-design.html">Classes vs. IDs - why even bother with IDs? - 10/22/14</a></li>
+<li><a href="../blog/t3-arrays-hashes.html">Hungry for Arrays and Hashes - 10/25/14</a></li>
+<li><a href="../blog/c3-thinking-style.html">Unit 1 - Reflection and Moving Forward- 10/26/14</a></li>
+<li><a href="../blog/t4-enumerable-methods.html">How Great is the Enumerable "Group_by"? Great! - 10/31/14</a></li>
+<li><a href="../blog/C4-tech-issues.html">A pipeline from the ghettos to Silicon Valley - 11/1/14</a></li>
+<li><a href="../blog/t5-ruby-classes.html">Create Your Own Island Today! It's easy with a Ruby Class! - 11/6/14</a></li>
+<li><a href="../blog/c5-feedback.html">Thoughts on Pairing and Feedback for Coding Challenges - 11/9/14</a></li>
+<li><a href="../blog/t6-oop-concepts.html">What is the difference between Classes and Modules? - 11/14/14</a></li>
+</ul></div>
+</body>
