@@ -27,6 +27,10 @@ table {
    font-style:italic; 
    padding:20px 40px 20px 40px} 
 
+.main_body p {
+	padding: 5px;
+}
+
 .code {
 	padding: 10px;
 	margin: 20px 50% 20px 20px;}
