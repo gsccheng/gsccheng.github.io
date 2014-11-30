@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ruby Objects are Great -- Can we do the same in Javascript?</title>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+<body>
+<p>11/29/14</p>
+<h2>I Had A Dream, About Creating Objects in Ruby and JavaScript, and Boats</h2>
+<div class="main_body">
+	<p>GOOOOOOOOOOOD Morning! Your favorite Town Crier Timmy Here!</p>
+	<p>So last night I had a dream. I was about to head out to the cove to catch my weekly haul of cuttlefish when Parsons, you know the pier operator, stopped me to say that the winds will be picking up later that day. It was best I don't take my boat that day as the waters would be rocky he said. Instead, he offered his tugboat, the Ms Zippy. Now I've never actually been inside the Ms Zippy but judging from how it looks on the outside, and from how often I see it patrolling the harbor, I figured it would be quite a formidable and reliable boat... and well, from the name, fast. </p>
+	<p>So don't even ask me why, but somehow it was already nighttime and this random guy named Keith... you know how dreams just don't make sense sometimes... who I haven't even encountered since high school was with me to go catch our cuttlefish. Come to think of it, it also didn't any sense that Parsons would entrust his lady Ms Zippy like that to me. So yeah, we hope aboard I start setting the sails into position. I start looking for 
+the winch so I can adjust the rope controlling the sail. I couldn't bloody find the thing. In fact, it looks like the ropes tied to the sail either only was tied to the end of the spar or was routed inside it and disappeared somewhere.</p>
+	<p>I finally found a section at the bow of the boat that even said STEERING, but it was just basically a protruding rod. I tried moving it but it wouldn't budge. HOW AM I SUPPOSED TO STEER WITH THIS? In my own boat, the place labeled as STEERING actually was for steering! You would think this fancy tugboat would be better than that! Just then Toby, who is one of my boat hands, appeared out of nowhere and explained to me how the rod is actually a tiller. The reason it wasn't moving earlier was I didn't remove the pin and latch mechanism that locked the position in place.</p>
+	<p>The only other thing I remember from my dream is that later on we are sailing in the moonlight and I remember just how smooth it was steering the boat with it.</p>
+	<p>*silence*</p>
+	<p>The relationship between Ruby objects and JavaScript objects are the same thing!</p>
+	<p>You hear so much about JavaScript, it must be great to use! When you finally dive into it and are introduced to objects, you are probably introduced to the literal notation. You probably then realize, "hey, these aren't really objects, they're like Ruby hashes!". I can't make different instances, I can't make class variables, this is garbage and I feel handcuffed!-- and gypped!</p>
+	<p>But there's more to that. In comes the object defined through an Object Constructor as per below:
+	<div class="code">
+function myObject(){<br>
+    this.iAm = 'an object';<br>
+    this.whatAmI = function(){<br>
+        alert('I am ' + this.iAm);<br>
+    };<br>
+};<br>
+	</div>
+	<p>Notice how you can create both properties and methods inside the object constructor. You then can create an instance of the variable and call a method as shown below:</p>
+	<div class="code">
+		var myNewObject = new myObject();<br>
+		myNewObject.whatAmI();
+	</div>
+	<p>Meanwhile, class variables can be thought of as just a property of an object prototype. What is a prototype? Looks like you're going to have to find out. That is a lesson for another day<br>
+		*smiles*</p>
+	<p>So you guys understand how this is different from Ruby right? You remember my lesson on Ruby classes a few weeks ago right? Remember, that day when it was raining so loud some of you couldn't hear me? Well, if you  if you have any questions I will be available at Hee-Haw Hut grabbing some lunch. You are all welcome to join and I'd give you a refresher! Even better, free refreshing lemonade for the first student who can correctly draw out an example of a Ruby Class!</p>
+	<img src="http://thumbs.dreamstime.com/z/lemonade-glass-lemon-juice-over-white-background-34899054.jpg" width="500" /img>
+</div>
+<div class="blog_navi"><ul>
+<h3><b>All Blog Posts</b></h3>
+<li><a href="../blog/t1-git-blog.html">Why You'll Love Guy & Github - 10/11/14</a></li>
+<li><a href="../blog/c1-chefs-kitchen.html">Shereef's Fireside Chat - 10/12/14</a></li>
+<li><a href="../blog/t2-css-design.html">Classes vs. IDs - why even bother with IDs? - 10/22/14</a></li>
+<li><a href="../blog/t3-arrays-hashes.html">Hungry for Arrays and Hashes - 10/25/14</a></li>
+<li><a href="../blog/c3-thinking-style.html">Unit 1 - Reflection and Moving Forward- 10/26/14</a></li>
+<li><a href="../blog/t4-enumerable-methods.html">How Great is the Enumerable "Group_by"? Great! - 10/31/14</a></li>
+<li><a href="../blog/C4-tech-issues.html">A pipeline from the ghettos to Silicon Valley - 11/1/14</a></li>
+<li><a href="../blog/t5-ruby-classes.html">Create Your Own Island Today! It's easy with a Ruby Class! - 11/6/14</a></li>
+<li><a href="../blog/c5-feedback.html">Thoughts on Pairing and Feedback for Coding Challenges - 11/9/14</a></li>
+<li><a href="../blog/t6-oop-concepts.html">What is the difference between Classes and Modules - 11/14/14</a></li>
+<li><a href="../blog/c6-stereotype-threat.html">Swallowing Saliva and How I Feel that Stereotype Threats Have an Opposite Effect on Me - 11/16/14</a></li>
+<li><a href="../blog/c6-stereotype-threat.html">I Had A Dream, About Creating Objects in Ruby and JavaScript, and Boats - 11/29/14</a></li>
+</ul></div>
+</body>

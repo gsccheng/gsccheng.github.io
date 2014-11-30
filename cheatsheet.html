@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="shortcut icon" href="../icons/tab_icon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Gruppo|Rajdhani|Great+Vibes|Sacramento|Rokkitt|Montserrat|Open+Sans:300,400,700|Roboto|Lato|Courgette' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main-stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/cheatsheet.css" />
+    <title>Angela Field</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="body">
+        <div class="text_form">
+          <table>
+            <tr>
+              <th>Number</th>
+              <th>Name</th>
+              <th>Instructions</th>
+              <th>Code</th>
+              <th>Maintenance</th>
+              <th>Reference</th>
+            </tr>
+            <tr>
+              <td>[Num]</td>
+              <td>Command Line Tools</td>
+              <td>Type the following code on your command line. Follow the prompts to complete the install.</td>
+              <td><code>xcode-select --install</code></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>[Num]</td>
+              <td>Install Homebrew</td>
+              <td>Type the following code on your command line. It will prompt you for your password.</td>
+              <td><code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>[Num]</td>
+              <td>Set Up Your Path</td>
+              <td>Clone this GitHub repository and install the files. Type each line separately.</td>
+              <td><code>git clone https://github.com/supertopher/dotfiles.git<br>cd dotfiles<br>./install</code></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>[Num]</td>
+              <td>Configure Git</td>
+              <td>You need to overwrite .gitconfig to your own username and password in GitHub. Use your name and your GitHub email address in the following format.</td>
+              <td>git config --global user.name "John Doe"<br>git config --global user.email johndoe@example.com</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>[Num]</td>
+              <td>Set Up Sublime</td>
+              <td>Make Sublime text your preferred editor for git.</td>
+              <td>git config --global core.editor "subl -w"</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>[Num]</td>
+              <td>Install Rbenv</td>
+              <td>Type the following code on your command line. Rbenv uses this to install individual versions of Ruby. If you are using RVM instead of rbenv, you will not need to install ruby-build.</td>
+              <td>brew install ruby-build</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            -----------------------------Gabriel's code below here ------------------------
+            <tr>
+                <td>[Num]</td>
+                <td>Install Ruby Build</td>
+                <td>Type the following code on your command line. This is used to install individual versions of Ruby.<td>
+                <td>brew install ruby-build<td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Install Ruby</td>
+                <td>Type the code in the next column. Note that the following installs Ruby 2.0.0. Replace that section with whichever version you want to install</td>
+                <td>rbenv install 2.0.0-p481</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Type the code in the next column. This sets the default ruby to be used in your computer which is the one we just installed.</td>
+                <td>rbenv global 2.0.0-p481</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Install Git</td>
+                <td>Type the code in the next column. This installs Git and autocompletion for Git.</td>
+                <td>brew install git</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Install Node</td>
+                <td>Type the code in the next column. Node allows you to run Javascript in your terminal.</td>
+                <td>brew install node</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Install RSpec</td>
+                <td>Type the code in the next column. This installs RSpec, a ruby testing framework.<br>NOTE: You should never need to <code>sudo gem install<code> anything and if you are, it means that your system isn't using the rbenv(or RVM) version of rubygems</td>
+                <td>gem install rspec</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Install SQLite3</td>
+                <td>Type in the code in the next column. To oevrwrite your current system copy of SQLite, you would also need to type <code>brew link sqlite3 --force</code></td>
+                <td>brew install SQLite3</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Install Postgres</td>
+                <td>Type the code in the next column one line at a time.</td>
+                <td>brew install postgres<br>
+                    mkdir -p $HOME/Library/LaunchAgents<br>
+                    ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents<br>
+                    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+          </table>
+</body
+          </html>
