@@ -45,3 +45,7 @@ table {
 	padding-top: 30px;
 	/*float: left;*/	
 	display:block}
+	
+div.intro {
+	padding: 10px 0px;
+}
