@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title><!--Title goes here--></title>
+<title>SQL Injection - Ooooh Scary...</title>
 <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
 </head>
 <body>
-	<p><!--Date goes here--></p>
-	<h2><!--Title goes here--></h2>
+	<p>12/01/14</p>
+	<h2>SQL Injection - Ooooh Scary...</h2>
 	<div class="intro">GOOOOOOOOOOOD Morning! Your favorite Town Crier Timmy Here!</div>
-	<div class="main_body"><p><!--Entry goes here--></p></div>
+	<div class="main_body">
+		<p>Let's start things off with this illustration.</p>
+		<img src="../blog/imgs/exploits_of_a_mom.png" /img>
+		<p>Kids, do not try this at home, but I am about to crudely illustrate one method to hack a computer and steal information from it. We residents here at Gabriel-man island are proud and upstanding citizens aren't we?</p>
+		<p>SQL injection is one of the ways you can steal data from an organization, particularly from their SQL database. What this exploits is how SQL will intepret certain pieces of data as commands for the fell means of the attacker. For example, an attacker may "inject" these string literal escape characters for field in a table when what it does is escape out of it and instead executes a command that will send everything in that table to the attacker!</p>
+		<p>One way for an organization to mitigate this is to make sure they filter their inputs for these strings of code. Of course, then one will think, wouldn't there then be malicious strings of code that can bypass that filter as well? Sure, and that's one of the reasons why web security is a huge problem in networks outside of Gabriel-Man Island. Intrusion detection mechanisms like firewalls and patching do little to prevent these attacks. Instead, to prevent and detect the attacks, you should perform thorough audits, make sure you use best coding practice to sanitize your web applications, and regularly perform a web security audit after each change and addition to your web components.</p>
+	</div>
 	<div class="blog_navi"><ul>
 <h3><b>All Blog Posts</b></h3>
 <li><a href="../blog/t1-git-blog.html">Why You'll Love Guy & Github - 10/11/14</a></li>
@@ -25,7 +31,6 @@
 <li><a href="../blog/t7-JavaScript.html">I Had A Dream, About Creating Objects in Ruby and JavaScript, and Boats - 11/29/14</a></li>
 <li><a href="../blog/c7-values.html">Accomplishment is Really the Highest Value - 11/30/14</a></li>
 <li><a href="../blog/c7-values.html">SQL Injection - Ooooh Scary... - 12/01/14</a></li>
-
 
 </ul></div>
 </body>
