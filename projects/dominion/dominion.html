@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dominion</title>
+	<link href="dominion.css" rel="stylesheet">
+	<script src="dominion.js"></script>
+</head>
+
+<body id="background_image">
+
+<div id="popup">
+<!-- Popup Div Starts Here -->
+	<div id="popup_greeting">
+<!-- Form -->
+		<form action="#" id="form" method="post" name="form">
+			<img id="close" src="x_button.jpg" onclick = "hide_popup()">
+			<h2>Your Majesty, wake up!</h2>
+			<p><i>So the prophecies are true...</i> Thank goodness you've arrived! Our kingdom needs your help! What is your name young fellow? Sorry if I'm asking again, I have short-term memory sometimes.</p>
+
+			<input id="name" name="name" placeholder="How you'd like to be adressed" type="text">
+			<input id="dominion_name" name="dominion_name" placeholder="Dominion Name" type="text">
+
+			<a href="javascript:check_empty()" id="submit">Say it</a>
+			<p>Hurry we must go, I have no time to explain, come along now...</p>
+		</form>
+	</div>
+<!-- Popup Div Ends Here -->
+</div>
+<!-- Display Popup Button -->
+<div id="intro">
+	<h2>After a tough morning at the office, you wander outside to get some fresh air. You decide to walk a little further this time, across the road and into a trail in the forest that you've always seen but never decided to actually walk. As you continue down the trail, things seem to get a little dark. Is it the dense trees or are you a little short of breath? It seems a little odd to you, but you see a large, rather fancy looking chair on the side of the trail. Hmm, maybe it's just a point for hikers to rest. Anyways, you decide to take a short break and...</h2>
+	<button type="button" id="sit_down" onclick = "show_popup()">Sit Down</button>
+</div>
+
+<div id="body">
+	<div><h1 id="title"></h1></div>
+	<div id="goals_in_upper_right"></div>
+	<div id="overview"></div>
+	<div id="dominion_display"></div>
+	<div id="prompt"></div>
+	<div id="entry">
+	<form id="radio_buttons">
+		<input type="radio" name="user_selection" value="Construct"/>Construct<br>
+		<input type="radio" name="user_selection" value="Train"/>Train<br>
+		<input type="radio" name="user_selection" value="Invest"/>Invest<br>
+		<input type="radio" name="user_selection" value="Explore"/>Explore<br>
+		<input type="radio" name="user_selection" value="Invade"/>Invade<br>
+		<input id="default_selection" type="radio" name="user_selection" value="End Week"/>End Week<br>
+	</form>
+	</div>
+
+
+
+	<!-- <select id="user_selection">
+		<option value="Construct">Construct</option>
+		<option value="Train">Train</option>
+		<option value="Invest">Invest</option>
+		<option value="Explore">Explore</option>
+		<option value="Invade">Invade</option>
+		<option value="End Week">End Week</option>
+	</select> -->
+
+	<!-- <p>Enter a quantity if applicable:</p>
+	<input id="qty" type="number"> -->
+	<button type="button" id="say_it" onclick="play_dominion()">Say it</button>
+</div>
+
+</body>
+</html>
