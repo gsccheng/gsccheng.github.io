@@ -13,7 +13,7 @@ window.onload = function() {
   exco.innerHTML = "Gabriel Cheng&#13;&#10;Kristen Siu&#13;&#10;Michael Cheng&#13;&#10;Kelvin Leung&#13;&#10;Andy Kang&#13;&#10;John Ng&#13;&#10;Richard Chen&#13;&#10;James Yu&#13;&#10;Shanmei Kuang&#13;&#10;Anthony Vong&#13;&#10;Melissa Kuo";
 
   var sgLeaders = document.getElementsByName('sg-leaders')[0];
-  sgLeaders.innerHTML = "Small Group Leader 1&#13;&#10;Small Group Leader 2&#13;&#10;Small Group Leader 3&#13;&#10;Small Group Leader 4&#13;&#10;Small Group Leader 5&#13;&#10;Small Group Leader 6&#13;&#10;Small Group Leader 7&#13;&#10;Small Group Leader 8&#13;&#10;Small Group Leader 9&#13;&#10;Small Group Leader 10&#13;&#10;Small Group Leader 11";
+  sgLeaders.innerHTML = "Small Group Leader 1&#13;&#10;Small Group Leader 2&#13;&#10;Small Group Leader 3&#13;&#10;Small Group Leader 4&#13;&#10;Small Group Leader 5&#13;&#10;Small Group Leader 6&#13;&#10;Small Group Leader 7&#13;&#10;Small Group Leader 8&#13;&#10;Small Group Leader 9&#13;&#10;Small Group Leader 10";
 
   var presentRecruits = document.getElementsByName('present-recruits')[0];
   presentRecruits.innerHTML = "Present Recruit 1&#13;&#10;Present Recruit 2&#13;&#10;Present Recruit 3&#13;&#10;Present Recruit 4&#13;&#10;Present Recruit 5&#13;&#10;Present Recruit 6&#13;&#10;Present Recruit 7&#13;&#10;Present Recruit 8&#13;&#10;Present Recruit 9&#13;&#10;Present Recruit 10&#13;&#10;Present Recruit 11&#13;&#10;Present Recruit 12&#13;&#10;Present Recruit 13&#13;&#10;Present Recruit 14&#13;&#10;Present Recruit 15&#13;&#10;Present Recruit 16&#13;&#10;Present Recruit 17&#13;&#10;Present Recruit 18&#13;&#10;Present Recruit 19&#13;&#10;Present Recruit 20&#13;&#10;Present Recruit 21&#13;&#10;Present Recruit 22&#13;&#10;Present Recruit 23&#13;&#10;Present Recruit 24&#13;&#10;Present Recruit 25&#13;&#10;Present Recruit 26&#13;&#10;Present Recruit 27&#13;&#10;Present Recruit 28&#13;&#10;Present Recruit 29&#13;&#10;Present Recruit 30&#13;&#10;Present Recruit 31&#13;&#10;Present Recruit 32&#13;&#10;Present Recruit 33&#13;&#10;Present Recruit 34&#13;&#10;Present Recruit 35&#13;&#10;Present Recruit 36&#13;&#10;Present Recruit 37&#13;&#10;Present Recruit 38&#13;&#10;Present Recruit 39&#13;&#10;Present Recruit 40&#13;&#10;Present Recruit 41&#13;&#10;Present Recruit 42&#13;&#10;Present Recruit 43&#13;&#10;Present Recruit 44&#13;&#10;Present Recruit 45&#13;&#10;Present Recruit 46&#13;&#10;Present Recruit 47&#13;&#10;Present Recruit 48&#13;&#10;Present Recruit 49";
@@ -137,8 +137,8 @@ function generateAll() {
     team.querySelectorAll('h5')[2].innerHTML = 'Absent Recruits:';
     team.querySelectorAll('h5')[3].innerHTML = 'Exco:';
 
-    // Populate members from beginning of array
-    dividedPresentArr[index].map(function(recruit) {
+    // Populate members from end of array
+    dividedPresentArr[numGroupsToDivide - index - 1].map(function(recruit) {
       lineItem = document.createElement('li');
       lineItem.innerHTML = recruit;
 
@@ -156,8 +156,10 @@ function generateAll() {
       orderedListParent.appendChild(lineItem);
     })
 
-    // Populate members from end of array for balance
-    dividedAbsentArr[numGroupsToDivide - index - 1].map(function(recruit) {
+    // Populate members from beginning of array for balance
+    if (!dividedAbsentArr[index]) {dividedAbsentArr.push(['No Absent Recruit'])};
+
+    dividedAbsentArr[index].map(function(recruit) {
       lineItem = document.createElement('li');
       lineItem.innerHTML = recruit;
 
