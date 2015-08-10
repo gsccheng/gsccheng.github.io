@@ -1,0 +1,41 @@
+#form, #results {
+  display: block;
+  margin: 0px 0px 30px 0px;
+}
+
+div {
+  display: inline-block;
+  margin: 0px 30px;
+/*  padding: 0px;
+  border: 0px;*/
+  background-color: #b0c4de;
+}
+
+img {
+  width: 15%;
+}
+
+h1 {
+  text-align: center;
+}
+
+h4, h5, ol {
+  margin: 5px;
+}
+
+#template {
+  display: none;
+}
+
+.teams h4 {
+  text-decoration: underline;
+}
+
+.teams {
+  margin: 0px;
+  float: left;
+}
+
+h5.recruits {
+  font-style: italic;
+}

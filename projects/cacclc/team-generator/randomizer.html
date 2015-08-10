@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+    <link href="randomizer.css" type="text/css" rel="stylesheet">
+    <title>CACCLC 2015 Team Randomizer</title>
+  </head>
+  <img src="logo.png">
+  <h1>Team Randomizer for CACCLC 2015</h1>
+  <div id='form'>
+    <form action='#'>
+      <fieldset>
+        <legend>Members to Allocate</legend>
+        <div>
+          <h4>Present Recruits</h4>
+          <textarea rows='12' cols='20' name="present-recruits" placeholder='Enter Recruit names separated by a new line'></textarea>
+        </div>
+
+        <div>
+          <h4>Absent Recruits</h4>
+          <textarea rows='12' cols='20' name="absent-recruits" placeholder='Enter Recruit names separated by a new line'></textarea>
+        </div>
+
+        <div>
+          <h4>Small Group Leaders</h4>
+          <textarea rows='12' cols='20' name="sg-leaders" placeholder='Enter Small Group Leader names separated by a new line'></textarea>
+        </div>
+
+        <div>
+          <h4>Exco<h4>
+            <textarea rows='12' cols='20' name="exco" placeholder='Enter Exco names separated by a new line'></textarea>
+        </div>
+
+        <div>
+          <h4>Mandarin Speakers</h4>
+          <textarea rows='12' cols='20' name="mandarin" placeholder='Enter Mandarin speaking recruit names separated by a new line'></textarea>
+        </div>
+
+        <div>
+          <h4>Cantonese Speakers</h4>
+          <textarea rows='12' cols='20' name="cantonese" placeholder='Enter Cantonese speaking recruit names separated by a new line'></textarea>
+        </div>
+
+        <input type="button" value="Generate!" onclick="generateAll()">
+        </fieldset>
+    </form>
+  </div>
+
+  <div id='results'>
+    <fieldset>
+      <legend>Balanced and Randomized Teams</legend>
+      <div id='inner-results'>
+      </div>
+    </fieldset>
+  </div>
+
+  <div id='template' class='teams'>
+    <fieldset>
+      <h4></h4>
+      <h5>SGL: <span></span></h5>
+      <h5 class='recruits'></h5>
+      <ol>
+      </ol>
+      <h5 class='recruits'></h5>
+      <ol>
+      </ol>
+      <h5 class='recruits'></h5>
+      <ol>
+      </ol>
+    </fieldset>
+  </div>
+
+  <script type="text/javascript" src='randomizer.js'></script>
+  </body>
+</html>
