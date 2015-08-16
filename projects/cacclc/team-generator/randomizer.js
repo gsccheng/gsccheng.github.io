@@ -25,6 +25,7 @@ window.onload = function() {
 }
 
 function generateAll() {
+  // clears results if already populated
   if (document.getElementById('inner-results').innerHTML) {
     document.getElementById('inner-results').innerHTML = '';
   }
@@ -56,8 +57,6 @@ function generateAll() {
       orderedListParent.appendChild(lineItem);
     }
   }
-
-  // clears results if already populated
 
   generateChineseTeam('Team Alpha', 'Anne Wang', 'mandarin');
   generateChineseTeam('Team Bravo', 'Cantonese Leader', 'cantonese');
