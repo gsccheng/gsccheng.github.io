@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Airport Distance Calculator</title>
+  <meta name="Airport Distance Calculator" content="">
+  <meta name="Gabriel" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.jpg">
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- Create a global namespace -->
+  <script>
+    var myNS = {
+      autocomplete: {},
+      calculate: {},
+      map: {},
+      utils: {}
+    }
+  </script>
+
+  <script src="js/map.js"></script>
+  <script src="js/autocomplete.js"></script>
+  <script src="js/calculate.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/initialize.js"></script>
+</head>
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row center-text">
+      <h4 style="margin-bottom: 0%">Distance Calculator Between 2 US Airports</h4>
+    </div>
+
+    <div class="row center-text" style="margin-bottom: 3%">
+      <div class="center-text">
+        <img src="images/crow.gif" alt="crow" height="3%" width="3%">
+        <p style="display:inline">As the crow flies</p>
+        <img src="images/crow.gif" alt="crow" height="3%" width="3%">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ui-widget six columns center-text">
+        <label for="a1-input">Airport 1:</label>
+        <input id="a1-input" size="40%" placeholder="Start Typing to Search">
+      </div>
+      <div class="ui-widget six columns center-text">
+        <label for="a2-input">Airport 2:</label>
+        <input id="a2-input" size="40%" placeholder="Start Typing to Search">
+      </div>
+    </div>
+
+    <div class="row center-text">
+      <button id="calc-button" class="ui-button ui-widget ui-corner-all">Calculate</button>
+      <button id="reset-button" class="ui-button ui-widget ui-corner-all">Reset</button>
+    </div>
+
+    <div class="row" style="margin-top: 3%">
+      <h5 class="center-text" style="margin-bottom: 0%">Distance (miles)</h5>
+    </div>
+
+    <div class="row" style="border-style:solid;border-color:#002800" style="margin-top: 0%">
+      <p id="distance" class="center-text" style="margin-bottom:0%;color:gray"></p>
+    </div>
+  </div>
+  <div class="center-text" id="map" style="margin-top: 1%"></div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYjjip6lIGp2_jiRVR_4gGvLjdaQoLFDY&libraries=places&callback=myNS.initialize" async defer></script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
